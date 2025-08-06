@@ -1,0 +1,43 @@
+body {
+    background-image: url('https://media.istockphoto.com/id/1138892999/vector/wavy-ombre-yellow-sun-rays-background.jpg?s=612x612&w=0&k=20&c=T9zd-TiR4_nmuJCGTJfiIUl9EuGQ6BwlA5GRbuRmXK8=');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    font-size: 400%;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-family:'garamond', serif;
+    margin: 20px;
+}
+#about-me {
+    font-size: 200%;
+    text-align: center;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(244, 144, 117, 0.8);
+    border-radius: 10px;
+    
+}
+#introduction {
+    font-size:100%;
+    text-align: center;
+    color: black;
+    font-family: 'Verdana', sans-serif;
+     margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    
+
+}
+#my-interests {
+    font-size:200%;
+    text-align:center;
+    color:black;
+    font-family:Times New Roman, Times, serif;
+    margin:20px;
+}
