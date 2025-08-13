@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.resume-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 32px;
+}
+.header {
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+.header p {
+    color: #666;
+    font-size: 1.1em;
+    margin: 8px 0 0 0;
+}
+.section {
+    margin-bottom: 28px;
+}
+.section-title {
+    font-size: 1.3em;
+    color: #1976d2;
+    margin-bottom: 10px;
+    border-left: 4px solid #1976d2;
+    padding-left: 10px;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 6px;
+}
+.experience, .education {
+    margin-bottom: 18px;
+}
+.job-title, .degree {
+    font-weight: bold;
+    color: #333;
+}
+.company, .school {
+    color: #1976d2;
+    font-style: italic;
+}
+
