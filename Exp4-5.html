@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>From Nam's Lens</title>
+<style>
+    /* Base styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background: #f7f7f7;
+        color: #333;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 12px; /* gap between columns */
+    }
+
+    .column {
+        flex: 1 1 23%; /* grow/shrink, base 23% to leave gap */
+        max-width: 23%;
+        box-sizing: border-box;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        padding: 8px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        /* fade-in */
+        opacity: 0;
+        animation: fadeInUp 0.6s forwards;
+    }
+
+    /* Stagger animation delay for columns */
+    .column:nth-child(2) { animation-delay: 0.2s; }
+    .column:nth-child(3) { animation-delay: 0.4s; }
+    .column:nth-child(4) { animation-delay: 0.6s; }
+    .column:nth-child(5) { animation-delay: 0.8s; }
+
+    /* Column hover effect */
+    .column:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .column img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; /* maintain aspect ratio, crop if needed */
+        border-radius: 10px;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        opacity: 0;
+        animation: fadeIn 0.8s forwards;
+    }
+
+    /* Staggered image fade-in delays inside each column */
+    .column img:nth-child(1) { animation-delay: 0.3s; }
+    .column img:nth-child(2) { animation-delay: 0.5s; }
+    .column img:nth-child(3) { animation-delay: 0.7s; }
+
+    /* Image hover zoom */
+    .column img:hover {
+        transform: scale(1.08);
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        border: 3px solid goldenrod;
+        border-radius: 20px;
+        padding: 15px 0;
+        background: #fff8dc;
+        box-shadow: 0 2px 8px rgba(218,165,32,0.4);
+        opacity: 0;
+        animation: fadeInDown 1s forwards;
+    }
+
+    .title h1 {
+        margin: 0;
+        font-weight: 700;
+        color: goldenrod;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .column {
+            flex: 1 1 48%;
+            max-width: 48%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .column {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>From Nam's Lens</h1>
+        </div>
+
+        <div class="column">
+            <img src="https://cdn.prod.website-files.com/670e0ce761868ff9e8915a06/675df208edd853f6cb2267c9_671655a6aef2583842eb686e_65f863d2b8a8f574defc26da_Vintage_Aesthetic_Photography_85e845627c_jnyhzg.webp" alt="Image 1">
+            <img src="https://images.unsplash.com/photo-1685248307090-7398826be120?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwYWVzdGhldGljfGVufDB8fDB8fHww" alt="Image 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf67FRhHw_O5g-G3eIhvxVdF50LR8hdPRZ5Q&s" alt="Image 3">
+        </div>
+
+        <div class="column">
+            <img src="https://iso.500px.com/wp-content/uploads/2020/05/spring-pictures-By-Mykhailo-Sherman--1500x1000.jpeg" alt="Image 4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MGx93ALW2dfjC_MQ8JGmiOy_SMeScjvViQ&s" alt="Image 5">
+            <img src="https://static4.depositphotos.com/1018174/459/i/450/depositphotos_4597033-Vogue-style-photo-of-two-fashion-ladies.jpg" alt="Image 6">
+        </div>
+
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjS6Act8VjPKDps7vEhBEYCTLVCeL112yrH9UnjPn2ubBy09xu6aGddBJG2rGV_ZEJVJk&usqp=CAU" alt="Image 7">
+            <img src="https://i.pinimg.com/736x/96/f4/33/96f43370b410bc39445a0ba1ae15ba46.jpg" alt="Image 8">
+            <img src="https://images.pexels.com/photos/237266/pexels-photo-237266.jpeg" alt="Image 9">
+        </div>
+
+        <div class="column">
+            <img src="https://www.clubmahindra.com/blog/media/section_images/naturephot-ec32e94608f809e.webp" alt="Image 10">
+            <img src="https://i.pinimg.com/736x/62/0f/06/620f062d010ce6184cdb9fafb233624b.jpg" alt="Image 11">
+            <img src="https://themoodguide.com/wp-content/uploads/2024/11/cottagecore-aesthetic-mushroom.jpg" alt="Image 12">
+        </div>
+    </div>
+</body>
+</html>
